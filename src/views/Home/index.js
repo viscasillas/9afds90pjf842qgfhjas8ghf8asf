@@ -40,7 +40,8 @@ export default class Home extends Component {
         })
       ]
     }).then(
-      response => (window.location.href = "/editor/" + response.response)
+      response => console.log(response)
+      // (window.location.href = "/editor/" + response.response)
     );
   };
 

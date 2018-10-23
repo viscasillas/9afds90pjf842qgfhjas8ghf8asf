@@ -19,7 +19,9 @@ app.get("/", (req, res) => {
   res.send("Invalid Route");
 });
 
-["rooms", "uuid"].map(endpoint => require(`./${endpoint}/index.js`)(app));
+["rooms", "uuid", "email"].map(endpoint =>
+  require(`./${endpoint}/index.js`)(app)
+);
 
 app.listen(8080, () => {
   console.log(`Check out the app at http://localhost:${8080}`);

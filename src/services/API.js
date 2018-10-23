@@ -11,7 +11,9 @@ const API = {
   newUUID: body =>
     axios.post(serverRoot + "/uuid", body).then(response => response.data),
   newUUIDS: body =>
-    axios.post(serverRoot + "/uuid_bulk", body).then(response => response.data)
+    axios.post(serverRoot + "/uuid_bulk", body).then(response => response.data),
+  email: body =>
+    axios.post(serverRoot + "/email", body).then(response => response.data)
 };
 
 export default API;
