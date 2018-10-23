@@ -1,3 +1,32 @@
+@keyframes itlGradient {
+  0% {
+    background-position: 90% 0%;
+  }
+  50% {
+    background-position: 11% 100%;
+  }
+  100% {
+    background-position: 90% 0%;
+  }
+}
+
+html {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(270deg, #4081d7, #26b4c7);
+  background-size: 600% 600% !important;
+  -webkit-animation: itlGradient 20s ease infinite;
+  -moz-animation: itlGradient 20s ease infinite;
+  -o-animation: itlGradient 20s ease infinite;
+  animation: itlGradient 20s ease infinite;
+}
 body {
   margin: 0;
   padding: 0;
